@@ -14,6 +14,7 @@ gem 'jbuilder', '~> 2.0'
 # View
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'normalize-rails'
 
 group :development do
   # Environment
