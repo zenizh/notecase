@@ -15,6 +15,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'normalize-rails'
+gem 'font-awesome-rails'
 
 group :development do
   # Environment
