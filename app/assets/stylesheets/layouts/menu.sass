@@ -1,0 +1,40 @@
+.l-menu
+  padding: 20px
+  border-bottom: 1px solid whiten($base-color, 90%)
+
+  ul
+    list-style: none
+    margin: 0 0 20px
+    padding: 0
+    font-size: 80%
+
+  li
+    margin-bottom: 8px
+
+    a
+      color: whiten($base-color, 50%)
+      text-decoration: none
+
+    i
+      width: 36px
+      margin-right: 8px
+      border: 1px solid whiten($base-color, 90%)
+      border-radius: 100%
+      color: whiten($base-color, 50%)
+      line-height: 34px
+      text-align: center
+
+    &.is-active
+      a
+        color: $primary-color
+
+      i
+        border-color: $primary-color
+        color: $primary-color
+
+    &:last-child
+      margin: 0
+
+  .button
+    padding: 0
+    line-height: 34px
