@@ -1,14 +1,39 @@
 <div class="nav">
   <div class="logo">
+    <%= link_to 'notecase', root_path %>
   </div>
 
   <div class="menu">
+    <ul>
+      <li><a href="#">Notes</a></li>
+      <li><a href="#">Favorites</a></li>
+    </ul>
+    <a href="#">New Note</a>
   </div>
 
   <div class="search">
+    <div class="search-tags">
+      <ul>
+        <% 10.times do %><li>Tag Name</li><% end %>
+      </ul>
+    </div>
+
+    <div class="search-users">
+      <ul>
+        <% 5.times do %><li>User Name</li><% end %>
+      </ul>
+    </div>
+
+    <div class="search-keywords">
+      <form>
+        <input type="text">
+        <input type="submit" value="Search">
+      </form>
+    </div>
   </div>
 
   <div class="dropdown">
+    <a href="#">User Name</a>
   </div>
 </div>
 
