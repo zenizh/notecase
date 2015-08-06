@@ -8,3 +8,28 @@ body
 body
   color: $base-color
   font-family: 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea
+  display: block
+  width: 100%
+  margin-bottom: 8px
+  padding: 8px
+  border: 1px solid whiten($base-color, 90%)
+  border-radius: 2px
+  color: whiten($base-color, 20%)
+  font-size: 70%
+
+  &:focus
+    outline: none
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea
+  -webkit-appearance: none
+
+  &:focus
+    background-color: whiten($primary-color, 95%)

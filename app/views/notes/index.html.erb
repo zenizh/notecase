@@ -12,28 +12,29 @@
   </div>
 
   <div class="l-search">
+    <div class="search-keywords">
+      <form>
+        <input type="text" autofocus placeholder="Search notes">
+      </form>
+    </div>
+
     <div class="search-tags">
+      <h3><%= fa_icon('tag') %>Tags</h3>
       <ul>
-        <% 10.times do %><li>Tag Name</li><% end %>
+        <% 10.times do %><li class="label label-default">Tag Name</li><% end %>
       </ul>
     </div>
 
     <div class="search-users">
+      <h3><%= fa_icon('user') %>Users</h3>
       <ul>
-        <% 5.times do %><li>User Name</li><% end %>
+        <% 5.times do %><li class="label label-default"><img src="http://placehold.it/26x26/86938d">User Name</li><% end %>
       </ul>
-    </div>
-
-    <div class="search-keywords">
-      <form>
-        <input type="text">
-        <input type="submit" value="Search">
-      </form>
     </div>
   </div>
 
   <div class="l-dropdown">
-    <a href="#">User Name</a>
+    <a href="#"><img src="http://placehold.it/36x36/86938d">User Name</a>
   </div>
 </div>
 
