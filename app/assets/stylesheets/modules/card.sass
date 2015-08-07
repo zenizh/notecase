@@ -1,0 +1,65 @@
+.card
+  +clearfix
+  display: block
+  position: relative
+  padding: 12px
+  border-bottom: 1px solid whiten($base-color, 90%)
+  text-decoration: none
+
+  &:last-child
+    border: none
+
+  &-image
+    float: right
+    border-radius: 2px
+    opacity: .8
+
+  &-content
+    color: whiten($base-color, 40%)
+    font-size: 80%
+
+  &-footer
+    clear: both
+    margin-top: 8px
+
+    span
+      color: whiten($base-color, 50%)
+      font-size: 70%
+
+      &:after
+        content: ','
+
+      &:last-child
+        &:after
+          content: ''
+
+  &-tags
+    float: left
+
+  &-attributes
+    float: right
+
+  &-favorite
+    display: inline-block
+    position: absolute
+    top: 0
+    left: 0
+    width: 0
+    height: 0
+    border-width: 6px
+    border-style: solid
+    border-color: $warning-color transparent transparent $warning-color
+
+  &.is-active,
+  &:hover
+    background-color: whiten($primary-color, 95%)
+
+    .card
+      &-image
+        opacity: 1
+
+      &-content
+        color: whiten($base-color, 20%)
+
+      &-footer
+        color: whiten($base-color, 40%)

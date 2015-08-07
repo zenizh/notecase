@@ -38,7 +38,38 @@
   </div>
 </div>
 
-<div class="l-notes">
+<div class="l-cards">
+  <div class="cards-header">
+    <span>20 notes found</span>
+    <%= fa_icon('bars') %>
+  </div>
+
+  <div class="cards">
+    <% 20.times do |i| %>
+      <a href="#" class="card<%= ' is-active' if i == 1 %>">
+        <img src="http://placehold.it/64x64/86938d" class="card-image">
+
+        <div class="card-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+
+        <div class="card-footer">
+          <div class="card-tags">
+            <span class="card-tag">Tag Name</span>
+          </div>
+
+          <div class="card-attributes">
+            <span class="card-user">User Name</span>
+            <span class="card-created_at">1 day ago</span>
+          </div>
+        </div>
+
+        <% if i % 3 == 0 %>
+          <span class="card-favorite"></span>
+        <% end %>
+      </a>
+    <% end %>
+  </div>
 </div>
 
 <div class="l-note">
